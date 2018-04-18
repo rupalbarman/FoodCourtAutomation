@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+
+<div class="container">
+	<h4>Your Orders, boy</h4>
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table" id="ordersTable">
+				<thead>
+					<tr>
+						<th>Order / invoice</th>
+						<th>Order details</th>
+						<th>Status check</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for order in orders %}
+					<tr><td>{{ order.invoice }}</td>
+					<td><a href="#" class="btn btn-primary" id="orderDetailButton">Order details</a></td>
+					<td><a href="#" class="btn btn-primary" id="statusCheckButton">Check Status</a></td></tr>
+                    {% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+{% include 'footer.html' %}
