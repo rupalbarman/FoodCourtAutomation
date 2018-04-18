@@ -4,7 +4,6 @@
 - To run in your machine,
 	- Pull the package
 	- Run either of the commands (install or upgrade packages if already present)
-
-
-		 pip install -r requirements.txt
-		 pip install -U -r requirements.txt
+		> pip install -r requirements.txt
+		
+		> pip install -U -r requirements.txt
